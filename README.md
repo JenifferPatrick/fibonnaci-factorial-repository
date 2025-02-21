@@ -66,4 +66,15 @@ Uses an iterative approach (instead of recursion) to avoid stack overflow for la
 
 Uses a long long variable to handle large factorial values. 
 
+Design of Algorithms:
+
+Fibonacci Series:
+
+Time Complexity: O(n) — We calculate each Fibonacci number once.
+
+Space Complexity: O(1) — The space usage is constant because we only use a fixed number of variables for storing the previous two terms. Factorial:
+
+Time Complexity: O(n) — We are making n recursive calls to compute the factorial.
+
+Space Complexity: O(n) — The space complexity is due to the recursive calls that will be stored in the stack until the base case is reached.
  
