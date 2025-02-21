@@ -24,6 +24,7 @@ The factorial of a number `n` is computed iteratively. The factorial of `n` is g
 
 
 - **How to Compile & Run:**
-``shg++ factorial.cpp -o factorial
+``sh 
+g++ factorial.cpp -o factorial
 ./factorial
 
