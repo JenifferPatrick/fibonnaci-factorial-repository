@@ -21,6 +21,9 @@ g++ fibonacci.cpp -o fibonacci
 
 ### Factorial Calculation
 The factorial of a number `n` is computed iteratively. The factorial of `n` is given by: n! = n × (n-1) × (n-2) × ... × 1
-g++ factorial.cpp -o factorial
+
+
+- **How to Compile & Run:**
+``shg++ factorial.cpp -o factorial
 ./factorial
 
