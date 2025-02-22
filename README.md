@@ -1,45 +1,40 @@
 # Fibonacci-Factorial-Repository
+Fibonacci series and factorial codes using C++ to show algorithm design.
 
-The codes are written in C++ to describe algorithm design using Fibonacci and Factorial series.
+# REG NUMBER: EB3/61529/22  
+# NAME: Jeniffer Muange  
 
-## Fibonacci Series & Factorial Program
+# Fibonacci.cpp
+## Detailed Explanation:
+### Function fibonacci(int n):
+- The Fibonacci sequence is generated using iteration.
+- It prints `n` terms using two variables that store previous values.
+- The first two terms are initialized as `F(0) = 0` and `F(1) = 1`.
+- Each subsequent term is calculated using `F(n) = F(n−1) + F(n−2)`.
+- If `n` is non-positive, an error message is displayed.
 
-This project contains a C++ implementation of:
-- Fibonacci Series
-- Factorial Calculation
+### Main Function:
+- Asks the user for the number of terms in the Fibonacci series.
+- Calls `fibonacci(n)` to compute and display the sequence.
+- Measures execution time using `chrono`.
 
-## Author
+# Factorial.cpp
+## Detailed Explanation:
+### Function factorial(int n):
+- The factorial of `n` is computed iteratively.
+- It initializes a variable `result = 1` and multiplies all integers from `1` to `n`.
+- If `n` is negative, an error message is displayed.
 
-**Name:** Jeniffer Muange  
-**Reg Number:** EB3/61529/22  
+### Main Function:
+- Asks the user to input a non-negative number.
+- Calls `factorial(n)` to compute and display the factorial value.
+- Measures execution time using `chrono`.
 
----
+# Design of Algorithms:
+### Fibonacci Series:
+- **Time Complexity:** O(n) — Since each term is computed only once.
+- **Space Complexity:** O(1) — Uses constant space for two variables.
 
-## Code Explanation
-
-### Fibonacci Series
-
-The Fibonacci sequence is generated using iteration. Given `n` terms, it prints the series using two variables that store previous values.
-
-#### ✅ What is the Fibonacci Series?
-The Fibonacci series is a sequence where each number is the sum of the previous two numbers. The first two terms are always `0` and `1`.
-
-Mathematically:  
-- **F(n) = F(n−1) + F(n−2)**  
-- Where:  
-  - **F(0) = 0**  
-  - **F(1) = 1**  
-  - **F(2) = 0 + 1 = 1**  
-  - **F(3) = 1 + 1 = 2**  
-  - **F(4) = 1 + 2 = 3**, and so on.
-
-#### ✅ Code Breakdown
-- **Input Handling:** The user enters how many terms they want.  
-- **Loop Execution:** A `for` loop runs `n` times, printing each Fibonacci number.  
-- **Efficient Calculation:** Each Fibonacci number is calculated without recursion, making it efficient.  
-- **Runtime Measurement:** The execution time of the Fibonacci function is measured in microseconds.  
-
-#### 🛠 How to Compile & Run:
-```sh
-g++ fibonacci.cpp -o fibonacci
-./fibonacci
+### Factorial:
+- **Time Complexity:** O(n) — Iteratively computes each factorial value.
+- **Space Complexity:** O(1) — Uses a single variable to store the result.
