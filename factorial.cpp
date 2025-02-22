@@ -1,6 +1,8 @@
 #include <iostream>
+#include <chrono>
 
 using namespace std;
+using namespace chrono;
 
 // Function to calculate factorial of a given number
 long long factorial(int num) {
@@ -22,8 +24,14 @@ int main() {
     cout << "Enter a number to find its factorial: ";
     cin >> factNum;
 
+    // Measure runtime
+    auto start = high_resolution_clock::now();
+    long long result = factorial(factNum);
+    auto stop = high_resolution_clock::now();
+
     // Compute and print factorial
-    cout << "Factorial of " << factNum << " is: " << factorial(factNum) << endl;
+    cout << "Factorial of " << factNum << " is: " << result << endl;
+    cout << "Time taken: " << duration_cast<microseconds>(stop - start).count() << " microseconds\n";
 
     return 0;
 }
